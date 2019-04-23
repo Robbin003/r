@@ -3,17 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>robbin003.github.io/r/categories/</loc>
+    <loc>https://github.io/robbin003/r/posts/5%E5%88%86%E5%9D%87%E7%BA%BF%E5%A4%9A%E5%A4%B4%E6%B2%A1%E6%9C%89%E6%94%AF%E6%92%91%E6%84%8F%E4%B9%89/</loc>
+    <lastmod>2019-04-23T20:00:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://github.io/robbin003/r/posts/about/</loc>
+    <lastmod>2019-04-23T19:46:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://github.io/robbin003/r/</loc>
+    <lastmod>2019-04-23T20:00:57+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robbin003.github.io/r/</loc>
+    <loc>https://github.io/robbin003/r/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>robbin003.github.io/r/tags/</loc>
+    <loc>https://github.io/robbin003/r/posts/</loc>
+    <lastmod>2019-04-23T20:00:57+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.io/robbin003/r/tags/</loc>
     <priority>0</priority>
   </url>
   
