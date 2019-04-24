@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hant"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TinyCore上架设MC服务器 - One Notebook</title>
+    <base href="/">
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.min.f5f3e2df2d0bed826bf977efbd7bec78aa1ceae578f6a61850470664e74d7a62.css">
+</head>
+<body><header>
+    <nav class="breadcrumb">
+        
+        <a href="/">/Home</a>
+        
+        <a href="/posts">/Posts</a>
+        
+    </nav>
+</header>
+<div class="container">
+<main id="single">
+    <h1>TinyCore上架设MC服务器</h1>
+    <h2><time datetime="2019-04-24T20:52:19&#43;0800">2019-04-24</time>
+</h2>
+    <section class="post-content">
+        <p><a href="https://www.tinycorelinux.net">Tinycore</a>轻量，小巧，比一般的容器效率要高。文件系统完全在内存中，占用的资源小，整个系统只跑一个MC服务器，没有别的东西，感觉很好。</p>
+
+<p>架设MC服务器，使用SpigotMC可玩性比较高，其<a href="https://www.spigotmc.org/wiki/buildtools/">构建工具</a>非常成熟，有几点注意：</p>
+
+<ul>
+<li>Java版本一定不能太高，Java8是最合适的</li>
+<li>服务器版本和启动器版本要一致</li>
+<li>只有两个文本需要修改：</li>
+<li>修改eula文件，第一次运行服务器自动产生该文件</li>
+</ul>
+
+<pre><code>eula=ture
+</code></pre>
+
+<ol>
+<li>修改server.properties文件，改文件也是服务器第一次运行时自动产生</li>
+</ol>
+
+<pre><code>online-mode=false
+</code></pre>
+
+<p>启动器的选择：</p>
+
+<p><a href="https://hmcl.huangyuhui.net">HMCL</a></p>
+
+<p>应该是最好的启动器，洁面非常清爽。</p>
+
+    </section>
+</main>
+
+        </div><footer>
+    <span class="footer-text">Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a></span>
+</footer>
+
+<script src="/js/highlight.pack.13389e4e093fc0b3466287ead64c1f9fc3007d7703813a413de3f046ea09a346.js" integrity="sha256-EzieTgk/wLNGYofq1kwfn8MAfXcDgTpBPePwRuoJo0Y="></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

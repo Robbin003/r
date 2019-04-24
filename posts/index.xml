@@ -6,10 +6,37 @@
     <description>Recent content in Posts on One Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hant</language>
-    <lastBuildDate>Wed, 24 Apr 2019 15:07:56 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 24 Apr 2019 21:10:54 +0800</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>波西米亚狂想曲</title>
+      <link>/posts/%E7%96%AF%E7%8B%82%E7%9A%84%E6%B3%A2%E8%A5%BF%E7%B1%B3%E4%BA%9A/</link>
+      <pubDate>Wed, 24 Apr 2019 21:10:54 +0800</pubDate>
+      
+      <guid>/posts/%E7%96%AF%E7%8B%82%E7%9A%84%E6%B3%A2%E8%A5%BF%E7%B1%B3%E4%BA%9A/</guid>
+      <description>看完电影【Bohemian Rhapsody】后，本来想发条下面的微信，没有发： 当我们说出理解和宽容的时候，要明白一件事：语言和文字通常是一种</description>
+    </item>
+    
+    <item>
+      <title>TinyCore上架设MC服务器</title>
+      <link>/posts/tinycore%E4%B8%8A%E6%9E%B6%E8%AE%BEmc%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Wed, 24 Apr 2019 20:52:19 +0800</pubDate>
+      
+      <guid>/posts/tinycore%E4%B8%8A%E6%9E%B6%E8%AE%BEmc%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>Tinycore轻量，小巧，比一般的容器效率要高。文件系统完全在内存中，占用的资源小，整个系统只跑一个MC服务器，没有别的东西，感觉很好。 架</description>
+    </item>
+    
+    <item>
+      <title>直觉和好奇</title>
+      <link>/posts/%E7%9B%B4%E8%A7%89%E5%92%8C%E5%A5%BD%E5%A5%87/</link>
+      <pubDate>Wed, 24 Apr 2019 20:42:14 +0800</pubDate>
+      
+      <guid>/posts/%E7%9B%B4%E8%A7%89%E5%92%8C%E5%A5%BD%E5%A5%87/</guid>
+      <description>直觉，好奇以及停下来思考的力量 看到贝索斯说的这句话，有点感触，记下来。 好奇要不要放在直觉的前面？ 好像没有必要。常说好奇是推动事情的第一个因素</description>
+    </item>
     
     <item>
       <title>9个点的5分的1笔</title>
