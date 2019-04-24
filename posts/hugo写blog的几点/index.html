@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hant"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hugo写blog的几点 - One Notebook</title>
+    <base href="/">
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.min.9b21c67966702bcc0c56426b2568e8a2af1c2550cbcd45c5ea1d331ee04673d4.css">
+</head>
+<body><header>
+    <nav class="breadcrumb">
+        
+        <a href="/">/Home</a>
+        
+        <a href="/posts">/Posts</a>
+        
+    </nav>
+</header>
+<div class="container">
+<main id="single">
+    <h1>Hugo写blog的几点</h1>
+    <h2><time datetime="2019-04-24T08:52:35&#43;0800">2019-04-24</time>
+</h2>
+    <section class="post-content">
+        
+
+<p>重复了一些事情，还是记录一下：</p>
+
+<ul>
+<li><code>hugo</code> 或者 <code>hugo serve</code> 命令一般加上 <code>-D</code> 选项比较好，因为默认<code>hugo new</code> 产生的都是draft</li>
+<li>有一些问题可能是theme带来的，比如terminal theme就有一些问题，因此theme选得简单一些比较好</li>
+<li><code>baseurl</code>的设置，可以直接设置成自己的定制域名，这个和hugo文档上的说明事不一致的，文档上还特别强调不能设置成自己的定制域名</li>
+<li>不要尝试去对theme做过多的修改</li>
+<li>一些简单的shell脚本花不了很多的时间</li>
+</ul>
+
+<h2 id="简单的一些脚本">简单的一些脚本</h2>
+
+<p>写新的blog时避免在项目目录和文章目录中来回：</p>
+
+<pre><code class="language-shell">
+#!/bin/bash
+
+echo 'edit the new posts...'
+
+# create one new post
+hugo new posts/$1
+
+# go to the posts dir
+cd content/posts
+
+# use vim to edit the new post
+vim $1
+
+# return work dir
+cd -
+
+</code></pre>
+
+<p>简单的一键发布到git pages上的命令：</p>
+
+<pre><code>
+#!/bin/bash
+
+echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
+
+# Build the project.
+hugo -D # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`
+
+# Go To Public folder
+cd public
+# Add changes to git.
+git add .
+
+# Commit changes.
+msg=&quot;rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+  then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+git push origin master
+
+# Come Back up to the Project Root
+cd ..
+
+</code></pre>
+
+<h2 id="发布到git-pages上的一些事">发布到Git pages上的一些事</h2>
+
+<p>理解了git的工作原理就没有必要按照文档中的指令来操作，太机械。需要注意的就是：</p>
+
+<ul>
+<li>在github.com上先建好项目</li>
+<li><code>git clone</code>项目</li>
+<li>可以修改<code>git clone</code>产生的目录名，不影响以后远程同步</li>
+<li>修改目录名的目的是不必去改变<code>hugo</code>命令产生的默认的public目录名</li>
+</ul>
+
+<p>整个public目录就是一个完整的网站，这点是确认的。</p>
+
+    </section>
+</main>
+
+        </div><footer>
+    <span class="footer-text">Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a></span>
+</footer>
+
+<script src="/js/highlight.pack.13389e4e093fc0b3466287ead64c1f9fc3007d7703813a413de3f046ea09a346.js" integrity="sha256-EzieTgk/wLNGYofq1kwfn8MAfXcDgTpBPePwRuoJo0Y="></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
