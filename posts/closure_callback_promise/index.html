@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hant"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Closure_callback_promise - One Notebook</title>
+    <base href="/">
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.min.f5f3e2df2d0bed826bf977efbd7bec78aa1ceae578f6a61850470664e74d7a62.css">
+</head>
+<body><header>
+    <nav class="breadcrumb">
+        
+        <a href="/">/Home</a>
+        
+        <a href="/posts">/Posts</a>
+        
+    </nav>
+</header>
+<div class="container">
+<main id="single">
+    <h1>Closure_callback_promise</h1>
+    <h2><time datetime="2019-04-25T19:15:05&#43;0800">2019-04-25</time>
+</h2>
+    <section class="post-content">
+        <p>Js作为一门语言，有时候感觉有点意思。基于函数的编程风格，其实很多时候比oop更有效率，代码比较简洁；oop经常代码比较啰嗦。</p>
+
+<p>Js的核心应该就是闭包的概念，闭包函数：返回值为函数的函数。</p>
+
+<p>一些简单的代码，用coffeescript写的：</p>
+
+<pre><code class="language-coffeescript">
+#sleep function to simulate cost work, which by return one Promise
+#
+#
+sleep = (ms) -&gt;
+	new Promise (res)-&gt;
+		setTimeout res, ms
+
+do -&gt;
+	await sleep 1000
+	console.log 'It takes 1 second.'
+	await sleep 3000
+	console.log 3
+	await sleep 5000
+	console.log 5
+
+# Test closure and callback
+#
+#
+testCallback = (greet, sayHi)-&gt; # Function definition
+	sayHi greet
+
+sayHi = (greet)-&gt;
+	console.log greet
+
+testCallback 'hello world', sayHi #Function invoke
+
+# Test Promise
+#
+testPromise = new Promise (res)-&gt;
+	res 'hello robbin'
+
+testPromise.then (greet)-&gt; console.log greet
+
+# setTimeout function
+#
+sayHello = -&gt; console.log 'hello setTimeout, there is no Parametr in function to be excuted by setTimeout.'
+setTimeout sayHello , 2000
+
+# await
+#await , launch the promise and wait for the res to be finished and get res's result as the return value.
+#
+say = (greet)-&gt;
+	new Promise (res)-&gt;
+		setTimeout res, 3000
+		console.log greet
+
+do -&gt;
+	await say 'hello await, Promise and setTimeout function can not be transfered parameters.'
+	console.log 'the end'
+
+</code></pre>
+
+<ul>
+<li>callback是把闭包函数的返回函数作为参数传递给闭包函数本身</li>
+<li>promise只是一种使用callback函数的语法糖</li>
+<li>异步函数，或者说await只是执行promise的一种语法糖</li>
+</ul>
+
+<p>其实90%的应用场景只需要使用callback，注意一点就是命名有意义的函数名称。</p>
+
+    </section>
+</main>
+
+        </div><footer>
+    <span class="footer-text">Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a></span>
+</footer>
+
+<script src="/js/highlight.pack.13389e4e093fc0b3466287ead64c1f9fc3007d7703813a413de3f046ea09a346.js" integrity="sha256-EzieTgk/wLNGYofq1kwfn8MAfXcDgTpBPePwRuoJo0Y="></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

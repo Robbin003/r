@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/closure_callback_promise/</loc>
+    <lastmod>2019-04-25T19:15:05+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/%E8%B7%8C%E5%81%9C%E5%88%B0%E6%B6%A8%E5%81%9C/</loc>
     <lastmod>2019-04-25T14:21:45+08:00</lastmod>
   </url>
@@ -59,13 +64,13 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-04-25T14:21:45+08:00</lastmod>
+    <lastmod>2019-04-25T19:15:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2019-04-25T14:21:45+08:00</lastmod>
+    <lastmod>2019-04-25T19:15:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
