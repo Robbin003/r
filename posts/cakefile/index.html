@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hant"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cakefile - One Notebook</title>
+    <base href="/">
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.min.f5f3e2df2d0bed826bf977efbd7bec78aa1ceae578f6a61850470664e74d7a62.css">
+</head>
+<body><header>
+    <nav class="breadcrumb">
+        
+        <a href="/">/Home</a>
+        
+        <a href="/posts">/Posts</a>
+        
+    </nav>
+</header>
+<div class="container">
+<main id="single">
+    <h1>Cakefile</h1>
+    <h2><time datetime="2019-04-26T22:16:18&#43;0800">2019-04-26</time>
+</h2>
+    <section class="post-content">
+        <p>cake是一个简单的好工具，一个简单的Cakefile如下：</p>
+
+<pre><code>
+fs = require 'fs'
+
+{ log } = console
+{ spawn } = require 'child_process'
+
+option '-o', '--output [DIR]', 'output dir'
+
+build = (callback)-&gt;
+	coffee = spawn 'coffee', ['-c', '-o', 'lib', 'src']
+	coffee.stderr.on 'data', (data)-&gt;
+		process.stderr.write data.toString()
+	coffee.stdout.on 'data', (data)-&gt;
+		log data.toString()
+	coffee.on 'exit', (code)-&gt;
+		callback?() if code is 0
+
+task 'build', 'Build lib/ from src/', build
+
+task 'watch', 'Watch src/ for changes', -&gt;
+	coffee = spawn 'coffee', ['-w', '-c', '-o', 'lib', 'src']
+	coffee.stderr.on 'data', (data)-&gt;
+		process.stderr.write data.toString()
+	coffee.stdout.on 'data', (data)-&gt;
+		print data.toString()
+
+task 'open', 'Open index.html', -&gt; 
+	# First open, then watch
+	spawn 'open', ['index.html']
+	invoke 'watch'
+
+sayHi = -&gt;
+	log 'hello everybody...'
+
+task 'sayHi', 'Demo say hello', sayHi
+
+sayHello = (greet)-&gt;
+	log greet
+
+option '-g', '--greet [mesg]', 'greet message'
+
+task 'sayHello', 'Demo callback with paramater', -&gt;
+	log @options.greet
+
+</code></pre>
+
+<ul>
+<li>全局的变量options对象有点问题</li>
+<li>task是一个回调函数，但是本身没有传递任何的变量信息给callback来利用，只是传递一个函数入口</li>
+<li>对于这样的callback， 如果要实现传递新的参数给callback，可以在外面定义一个函数，然后在匿名的callback中调用这个函数</li>
+<li>注意callback函数执行时，传递的参数是一个函数入口，而在callback函数的定义中，这个传递函数才是执行</li>
+<li>callback函数有定义，执行，和实现，三个概念，注意区分</li>
+</ul>
+
+    </section>
+</main>
+
+        </div><footer>
+    <span class="footer-text">Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a></span>
+</footer>
+
+<script src="/js/highlight.pack.13389e4e093fc0b3466287ead64c1f9fc3007d7703813a413de3f046ea09a346.js" integrity="sha256-EzieTgk/wLNGYofq1kwfn8MAfXcDgTpBPePwRuoJo0Y="></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

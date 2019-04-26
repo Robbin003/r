@@ -6,10 +6,19 @@
     <description>Recent content in Posts on One Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hant</language>
-    <lastBuildDate>Fri, 26 Apr 2019 15:25:59 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 26 Apr 2019 22:16:18 +0800</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cakefile</title>
+      <link>/posts/cakefile/</link>
+      <pubDate>Fri, 26 Apr 2019 22:16:18 +0800</pubDate>
+      
+      <guid>/posts/cakefile/</guid>
+      <description>cake是一个简单的好工具，一个简单的Cakefile如下： fs = require &#39;fs&#39; { log } = console { spawn } = require &#39;child_process&#39; option &#39;-o&#39;, &#39;--output [DIR]&#39;, &#39;output dir&#39; build = (callback)-&amp;gt; coffee = spawn &#39;coffee&#39;, [&#39;-c&#39;, &#39;-o&#39;, &#39;lib&#39;, &#39;src&#39;] coffee.stderr.on &#39;data&#39;, (data)-&amp;gt; process.stderr.write data.toString() coffee.stdout.on &#39;data&#39;, (data)-&amp;gt;</description>
+    </item>
     
     <item>
       <title>多录三句</title>
