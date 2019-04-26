@@ -25,7 +25,9 @@
     <h2><time datetime="2019-04-26T22:16:18&#43;0800">2019-04-26</time>
 </h2>
     <section class="post-content">
-        <p>cake是一个简单的好工具，一个简单的Cakefile如下：</p>
+        
+
+<p>cake是一个简单的好工具，一个简单的Cakefile如下：</p>
 
 <pre><code>
 fs = require 'fs'
@@ -75,11 +77,25 @@ task 'sayHello', 'Demo callback with paramater', -&gt;
 
 <ul>
 <li>全局的变量options对象有点问题</li>
-<li>task是一个回调函数，但是本身没有传递任何的变量信息给callback来利用，只是传递一个函数入口</li>
+</ul>
+
+<blockquote>
+<p>问题解决：
+1. options作为callback函数传递的变量，在callback实现中可以利用
+2. option函数的参数要严格按照格式来定义，特别不要忘记option后面的值占位符号，<code>[]</code>
+3. cake命令执行时，先是option，后面task</p>
+</blockquote>
+
+<ul>
+<li>task是一个回调函数，但是本身没有传递任何的变量信息给callback来利用，只是传递一个函数入口 <em>这是错误的，原来的【little book on coffeescript】书中的22页的代码为错误的。</em></li>
 <li>对于这样的callback， 如果要实现传递新的参数给callback，可以在外面定义一个函数，然后在匿名的callback中调用这个函数</li>
 <li>注意callback函数执行时，传递的参数是一个函数入口，而在callback函数的定义中，这个传递函数才是执行</li>
 <li>callback函数有定义，执行，和实现，三个概念，注意区分</li>
 </ul>
+
+<hr />
+
+<h2 id="一个简单的问题-浪费了我不少的时间">一个简单的问题，浪费了我不少的时间。</h2>
 
     </section>
 </main>
