@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hant"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cake的源码 - One Notebook</title>
+    <base href="/">
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.min.f5f3e2df2d0bed826bf977efbd7bec78aa1ceae578f6a61850470664e74d7a62.css">
+</head>
+<body><header>
+    <nav class="breadcrumb">
+        
+        <a href="/">/Home</a>
+        
+        <a href="/posts">/Posts</a>
+        
+    </nav>
+</header>
+<div class="container">
+<main id="single">
+    <h1>Cake的源码</h1>
+    <h2><time datetime="2019-04-28T14:06:16&#43;0800">2019-04-28</time>
+</h2>
+    <section class="post-content">
+        <p><a href="https://coffeescript.org/annotated-source/cake.html">cake.coffee-cake的源码</a>相当的小巧,看了一下，简单解说一下：</p>
+
+<ul>
+<li>optparse对选项的解析，optparse模块有一个OptionParser类，其构造函数接受一个选项数组作为参数，返回一个解析器对象，这个对象有一个parse方法，能够对命令行的参数数组做解析；注意：<code>args = process.argv[2..]</code>, 因为任何的node环境下的程序，<code>process.argv[]</code>的第一个元素是<code>node</code>，第二个元素是js文件名，因此自定义的参数都是从<code>argv[2]</code>以后了；</li>
+<li><code>helpers.extend global, {}</code>, 这里有用到<code>mixin</code>，对于如何暴露全局的变量有参考意义；</li>
+<li><code>CoffeeScript = require './'</code>,这个其实一个包了，是在<code>/lib/CoffeeScript/</code>目录，其中的<code>register()</code>和<code>run</code>函数是重要的两个函数；</li>
+<li>通过<code>path</code>和<code>fs</code>模块， 处理目录的技巧；</li>
+<li>callback的传递，由<code>task</code>函数组装，但是真正的callback的执行是在<code>invoke</code>函数中</li>
+<li><code>CoffeeScript</code>的<code>run</code>函数接受coffeescript的代码字符串作为参数，注意到这里用的<code>fs.readFileSync</code>同步函数</li>
+<li>程序小巧，模块化做得也很好。</li>
+</ul>
+
+<hr />
+
+<p>可以多学习一下吧。</p>
+
+    </section>
+</main>
+
+        </div><footer>
+    <span class="footer-text">Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a></span>
+</footer>
+
+<script src="/js/highlight.pack.13389e4e093fc0b3466287ead64c1f9fc3007d7703813a413de3f046ea09a346.js" integrity="sha256-EzieTgk/wLNGYofq1kwfn8MAfXcDgTpBPePwRuoJo0Y="></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

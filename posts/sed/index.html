@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hant"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sed - One Notebook</title>
+    <base href="/">
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.min.f5f3e2df2d0bed826bf977efbd7bec78aa1ceae578f6a61850470664e74d7a62.css">
+</head>
+<body><header>
+    <nav class="breadcrumb">
+        
+        <a href="/">/Home</a>
+        
+        <a href="/posts">/Posts</a>
+        
+    </nav>
+</header>
+<div class="container">
+<main id="single">
+    <h1>Sed</h1>
+    <h2><time datetime="2019-04-28T10:01:12&#43;0800">2019-04-28</time>
+</h2>
+    <section class="post-content">
+        <p>在任何一个文件中，放上一些tag，然后利用sed做文本分析，这样其实就是一个非常简单的插件系统；做得复杂一些，就是一个小小的编译器。</p>
+
+<p>一个小小脚本，可以在svelte组件文件中写coffeescript，代替写js。这就是相当于一个webpack里面的一个小插件。</p>
+
+<pre><code class="language-shell">
+#!/bin/sh
+
+# Covert the coffeescript to js in svelte file
+# So, we can use the coffescript to write the svelte component
+
+cat $1 | gsed -n '/&lt;script&gt;/,/&lt;\/script&gt;/p' |gsed '1d' | gsed '$d' | coffee -sbc &gt; tmp.js
+
+gsed -i '/&lt;script&gt;/i &lt;jstag&gt;' $1
+gsed -i '/&lt;script&gt;/,/&lt;\/script&gt;/d' $1
+gsed -i 's/&lt;jstag&gt;/&lt;script&gt;\n&lt;\/script&gt;/' $1
+gsed -i '/&lt;script&gt;/r tmp.js' $1
+
+rm tmp.js
+
+</code></pre>
+
+<hr />
+
+<p>几个坑说一下：</p>
+
+<ul>
+<li>Mac自带的sed和Linux sed有区别，可以安装<code>brew install gnu-sed</code></li>
+<li>以 <code>;</code>连接命令，第一个sed 后面的选项是不能传递到第二个命令, <code>sed -n 'command1' | sed -i 'command2'</code> 和 <code>sed -n 'command1 ; command2</code>是有区别，选项不能传递</li>
+<li>不能将 <code>-i</code>选项作用于管道命令<code>|</code>， 其实这个是很显然的</li>
+<li>sed没有当前行代号，自己可以通过<code>i</code>或者<code>a</code>命令添加临时标志，来说实现行的定位，如上面的<code>&lt;jstag&gt;</code>标志</li>
+</ul>
+
+<p>任何一个小的命令都需要一定的时间练习，这几行简单的命令大概花费了我半天的时间，太多的时候都是在debug。但是应该还是有一些意义的。</p>
+
+    </section>
+</main>
+
+        </div><footer>
+    <span class="footer-text">Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a></span>
+</footer>
+
+<script src="/js/highlight.pack.13389e4e093fc0b3466287ead64c1f9fc3007d7703813a413de3f046ea09a346.js" integrity="sha256-EzieTgk/wLNGYofq1kwfn8MAfXcDgTpBPePwRuoJo0Y="></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
