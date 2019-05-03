@@ -6,10 +6,37 @@
     <description>Recent content on One Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hant</language>
-    <lastBuildDate>Sun, 28 Apr 2019 14:06:16 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 03 May 2019 22:29:29 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tinycore中文化</title>
+      <link>/posts/tinycore%E4%B8%AD%E6%96%87%E5%8C%96/</link>
+      <pubDate>Fri, 03 May 2019 22:29:29 +0800</pubDate>
+      
+      <guid>/posts/tinycore%E4%B8%AD%E6%96%87%E5%8C%96/</guid>
+      <description>其实是在折腾。 如果没有装x系统，中文化没有太多的意思； 如果装x系统，对于tinycore来说，其实没有利用它的长处&amp;mdash;tinyco</description>
+    </item>
+    
+    <item>
+      <title>复仇者联盟4</title>
+      <link>/posts/%E5%A4%8D%E4%BB%87%E8%80%85%E8%81%94%E7%9B%9F4/</link>
+      <pubDate>Fri, 03 May 2019 22:21:41 +0800</pubDate>
+      
+      <guid>/posts/%E5%A4%8D%E4%BB%87%E8%80%85%E8%81%94%E7%9B%9F4/</guid>
+      <description>说实在的话，还不是特别能欣赏这样的大片。 所谓宇宙观的设定里面，没有任何基本的逻辑；说是科幻，肯定是不对的；说是神话，也不对。打造一个共同的战</description>
+    </item>
+    
+    <item>
+      <title>真相不是力量，力量才是真相</title>
+      <link>/posts/%E7%9C%9F%E7%9B%B8%E4%B8%8D%E6%98%AF%E5%8A%9B%E9%87%8F%E5%8A%9B%E9%87%8F%E6%89%8D%E6%98%AF%E7%9C%9F%E7%9B%B8/</link>
+      <pubDate>Mon, 29 Apr 2019 09:48:04 +0800</pubDate>
+      
+      <guid>/posts/%E7%9C%9F%E7%9B%B8%E4%B8%8D%E6%98%AF%E5%8A%9B%E9%87%8F%E5%8A%9B%E9%87%8F%E6%89%8D%E6%98%AF%E7%9C%9F%E7%9B%B8/</guid>
+      <description>真相不是力量，力量才是真相 阿桑奇的事件，在知乎上看到的一个评论。 这个世界本身就是如此，都是在玩一个游戏，这个游戏里面没有原来的那些词汇，正直</description>
+    </item>
     
     <item>
       <title>Cake的源码</title>

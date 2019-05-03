@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hant"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tinycore中文化 - One Notebook</title>
+    <base href="/">
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.min.f5f3e2df2d0bed826bf977efbd7bec78aa1ceae578f6a61850470664e74d7a62.css">
+</head>
+<body><header>
+    <nav class="breadcrumb">
+        
+        <a href="/">/Home</a>
+        
+        <a href="/posts">/Posts</a>
+        
+    </nav>
+</header>
+<div class="container">
+<main id="single">
+    <h1>Tinycore中文化</h1>
+    <h2><time datetime="2019-05-03T22:29:29&#43;0800">2019-05-03</time>
+</h2>
+    <section class="post-content">
+        
+
+<p>其实是在折腾。</p>
+
+<p>如果没有装x系统，中文化没有太多的意思； 如果装x系统，对于tinycore来说，其实没有利用它的长处&mdash;tinycore的桌面系统实在是太过于简陋。</p>
+
+<p>还是把中文化的过程放一下吧：</p>
+
+<h2 id="手动制作locale">手动制作locale</h2>
+
+<ul>
+<li>安装<code>getlocale.tcz</code>， 这个包其实是安装一些字体工具等，如glibc_i18n_locale.tcz, glibc_add_libs.tcz, glibc_apps.tcz, glibc_gconv.tcz</li>
+<li><code>mkdir -p /usr/lib/locale</code></li>
+<li><code>localedef -i zh_CN -f GBK zh_CN</code></li>
+<li>`localedef -i zh_CN -f UTF-8 zh_CN&rsquo;</li>
+</ul>
+
+<p>如果不需要GBK，可以只执行<code>localedef -i zh_CN -f UTF-8 zh_CN</code></p>
+
+<p>这些命令会在目录<code>/usr/lib/locale</code>下面产生一个名叫<code>locale-archive</code>的文件。</p>
+
+<p>备份此文件： 将<code>usr/lib/locale/locale-archive</code>写入到<code>/opt/.filetool.lst</code>中， 注意前面的文件的路径是绝对路径，但是没有根目录<code>/</code>.</p>
+
+<h2 id="中文字体">中文字体</h2>
+
+<p>字体文件应该安装到一下目录：</p>
+
+<p><code>/usr/share/fonts</code></p>
+
+<p>同样将 <code>usr/share/fonts/{your fonts file}</code> 写入到<code>/opt/.filetool.lst</code>.</p>
+
+<p><strong>没有x系统，这些好像都没有作用。</strong></p>
+
+    </section>
+</main>
+
+        </div><footer>
+    <span class="footer-text">Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a></span>
+</footer>
+
+<script src="/js/highlight.pack.13389e4e093fc0b3466287ead64c1f9fc3007d7703813a413de3f046ea09a346.js" integrity="sha256-EzieTgk/wLNGYofq1kwfn8MAfXcDgTpBPePwRuoJo0Y="></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

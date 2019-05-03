@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/tinycore%E4%B8%AD%E6%96%87%E5%8C%96/</loc>
+    <lastmod>2019-05-03T22:29:29+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/%E5%A4%8D%E4%BB%87%E8%80%85%E8%81%94%E7%9B%9F4/</loc>
+    <lastmod>2019-05-03T22:21:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/%E7%9C%9F%E7%9B%B8%E4%B8%8D%E6%98%AF%E5%8A%9B%E9%87%8F%E5%8A%9B%E9%87%8F%E6%89%8D%E6%98%AF%E7%9C%9F%E7%9B%B8/</loc>
+    <lastmod>2019-04-29T09:48:04+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/cake%E7%9A%84%E6%BA%90%E7%A0%81/</loc>
     <lastmod>2019-04-28T14:06:16+08:00</lastmod>
   </url>
@@ -104,13 +119,13 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-04-28T14:06:16+08:00</lastmod>
+    <lastmod>2019-05-03T22:29:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2019-04-28T14:06:16+08:00</lastmod>
+    <lastmod>2019-05-03T22:29:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
