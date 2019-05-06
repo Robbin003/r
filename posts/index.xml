@@ -6,10 +6,28 @@
     <description>Recent content in Posts on One Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hant</language>
-    <lastBuildDate>Sun, 05 May 2019 10:48:53 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 06 May 2019 07:50:50 +0800</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>检讨</title>
+      <link>/posts/%E6%A3%80%E8%AE%A8/</link>
+      <pubDate>Mon, 06 May 2019 07:50:50 +0800</pubDate>
+      
+      <guid>/posts/%E6%A3%80%E8%AE%A8/</guid>
+      <description>需要检讨一下： 昨天在折腾着alpine，一直到接近12点，其实来回折腾这个实在是没有意思的。怎样能够比较好的分配自己的精力，这个问题一定要引</description>
+    </item>
+    
+    <item>
+      <title>家务</title>
+      <link>/posts/%E5%AE%B6%E5%8A%A1/</link>
+      <pubDate>Sun, 05 May 2019 12:58:44 +0800</pubDate>
+      
+      <guid>/posts/%E5%AE%B6%E5%8A%A1/</guid>
+      <description>没有特别认真地对待过家务，从杭州回来后时间多了，才开始做了不少的家务。 很多关于如何提高时间利用率，如何提高工作效率的书都讲到一个基本的工作的</description>
+    </item>
     
     <item>
       <title>祭侄文稿</title>
@@ -261,15 +279,6 @@
       
       <guid>/posts/hugo%E5%86%99blog%E7%9A%84%E5%87%A0%E7%82%B9/</guid>
       <description>重复了一些事情，还是记录一下： hugo 或者 hugo serve 命令一般加上 -D 选项比较好，因为默认hugo new 产生的都是draft 有一些问题可能是theme带来的，比</description>
-    </item>
-    
-    <item>
-      <title>开仓和建仓3原则</title>
-      <link>/posts/%E5%BC%80%E4%BB%93%E5%92%8C%E5%BB%BA%E4%BB%933%E5%8E%9F%E5%88%99/</link>
-      <pubDate>Wed, 24 Apr 2019 08:48:33 +0800</pubDate>
-      
-      <guid>/posts/%E5%BC%80%E4%BB%93%E5%92%8C%E5%BB%BA%E4%BB%933%E5%8E%9F%E5%88%99/</guid>
-      <description>事情需要简单化，开仓和建仓的3个信号，每一个信号只能是一句话。 信号一定是来自多级别的联动： 日线图 30分钟图 5分钟图 建仓 日线图： 13日线在55</description>
     </item>
     
     <item>
