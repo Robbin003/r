@@ -6,10 +6,19 @@
     <description>Recent content on One Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hant</language>
-    <lastBuildDate>Wed, 08 May 2019 08:44:03 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 May 2019 11:57:52 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vim Go</title>
+      <link>/posts/vim-go/</link>
+      <pubDate>Thu, 09 May 2019 11:57:52 +0800</pubDate>
+      
+      <guid>/posts/vim-go/</guid>
+      <description>vim-go插件玩了一下： 函数的跳转： &amp;ldquo;[[&amp;rdquo; 和 “”]]&amp;rdquo; 查找函数，和或类型系统，包括结构体，接口的定义与实现 &amp;ldquo;ctl + ]&amp;rdquo;, 跳回函数原来位置&amp;</description>
+    </item>
     
     <item>
       <title>当下忘</title>
@@ -296,7 +305,7 @@
       <pubDate>Wed, 24 Apr 2019 08:48:33 +0800</pubDate>
       
       <guid>/%E4%BA%A4%E6%98%93/</guid>
-      <description>【2019-05-06】，暴跌，有何迹象？ 怎样避免？ 在小级别上，5分的一笔的操作是可取的。</description>
+      <description>首先是判断牛熊： 在操作的当天前面2天，不包括当天的13周期线的值的大小：如果前天的13周期均线值大于昨天，就是熊市，反之就是牛市。这里没有任</description>
     </item>
     
     <item>

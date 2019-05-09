@@ -6,10 +6,19 @@
     <description>Recent content in Posts on One Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hant</language>
-    <lastBuildDate>Wed, 08 May 2019 08:44:03 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 May 2019 11:57:52 +0800</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vim Go</title>
+      <link>/posts/vim-go/</link>
+      <pubDate>Thu, 09 May 2019 11:57:52 +0800</pubDate>
+      
+      <guid>/posts/vim-go/</guid>
+      <description>vim-go插件玩了一下： 函数的跳转： &amp;ldquo;[[&amp;rdquo; 和 “”]]&amp;rdquo; 查找函数，和或类型系统，包括结构体，接口的定义与实现 &amp;ldquo;ctl + ]&amp;rdquo;, 跳回函数原来位置&amp;</description>
+    </item>
     
     <item>
       <title>当下忘</title>
