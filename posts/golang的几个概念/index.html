@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hant"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Golang的几个概念 - One Notebook</title>
+    <base href="/">
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.min.f5f3e2df2d0bed826bf977efbd7bec78aa1ceae578f6a61850470664e74d7a62.css">
+</head>
+<body><header>
+    <nav class="breadcrumb">
+        
+        <a href="/">/Home</a>
+        
+        <a href="/posts">/Posts</a>
+        
+        <a href="/%E4%BA%A4%E6%98%93">/交易</a>
+        
+    </nav>
+</header>
+<div class="container">
+<main id="single">
+    <h1>Golang的几个概念</h1>
+    <h2><time datetime="2019-05-13T07:00:07&#43;0800">2019-05-13</time>
+</h2>
+    <section class="post-content">
+        <p>golang有几个重要的概念：</p>
+
+<ul>
+<li>通道，目前看基本没有大的问题，可以理解为一种特别的数据结构，独立于协程外，被包装成一种通信机制。默认额阻塞性可以用来同步协程，解决很多在异步编程中的回掉问题；而利用select - case 语法，可以实现非阻塞；</li>
+<li>类型系统</li>
+<li>结构体，在面向对象的编程中就是类和对象，结构体的定义是类，而机构体的初始化就，或者实例就是对象，也因为这个原因，一般对结构体的操作都显式的使用指针的语法&mdash;因为golang中，默认的对类型系统实例的操作都是值传递；</li>
+<li>接口一组函数的签名，实际上就是指向指针的指针，接口就是一个指向一个由指针数组构成的指针，因为每一个函数都是一个指针的入口，而将一个实现改接口的结构体赋值给该接口，就是相当于将指向该结构体的指针同时关联到一组函数的指针，从这个意义上理解一个结构体实现接口，就是实现结构中所有的函数，或者方法，就比较自然；</li>
+<li>组合， 同样在上面的基础上就很好理解：正常结构体A实现接口a, 结构体B实现了接口b， 这样如果结构体A组合了接口b的时候，当将结构体A赋值给接口a的时候，结构体A除了拥有接口a的所有方法外，也可以利用结构b的所有方法，而这个时候结构体B实现了结构，那是不是结构体A就拥有了所有结构体A的所有方法呢？从理论上，如果结构体C也实现了接口b的时候，那结构体A在结构体B和结构体C的方法实现中怎样选择呢？</li>
+<li>断言，这是通过一个指向结构体实例的指针来得到结构体实例的值。</li>
+</ul>
+
+<p>其实都是语法糖， 😄</p>
+
+    </section>
+</main>
+
+        </div><footer>
+    <span class="footer-text">Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a></span>
+</footer>
+
+<script src="/js/highlight.pack.13389e4e093fc0b3466287ead64c1f9fc3007d7703813a413de3f046ea09a346.js" integrity="sha256-EzieTgk/wLNGYofq1kwfn8MAfXcDgTpBPePwRuoJo0Y="></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

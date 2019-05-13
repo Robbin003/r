@@ -6,10 +6,28 @@
     <description>Recent content in Posts on One Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hant</language>
-    <lastBuildDate>Thu, 09 May 2019 11:57:52 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 May 2019 07:00:07 +0800</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Golang的几个概念</title>
+      <link>/posts/golang%E7%9A%84%E5%87%A0%E4%B8%AA%E6%A6%82%E5%BF%B5/</link>
+      <pubDate>Mon, 13 May 2019 07:00:07 +0800</pubDate>
+      
+      <guid>/posts/golang%E7%9A%84%E5%87%A0%E4%B8%AA%E6%A6%82%E5%BF%B5/</guid>
+      <description>golang有几个重要的概念： 通道，目前看基本没有大的问题，可以理解为一种特别的数据结构，独立于协程外，被包装成一种通信机制。默认额阻塞性可</description>
+    </item>
+    
+    <item>
+      <title>学习的效率</title>
+      <link>/posts/%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%88%E7%8E%87/</link>
+      <pubDate>Sun, 12 May 2019 08:57:41 +0800</pubDate>
+      
+      <guid>/posts/%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%88%E7%8E%87/</guid>
+      <description>看了知乎上的一个主题，谈到学习效率的问题，几个观点总结一下： 内功： 要分配和管理好自己的能量和精力，睡眠很重要，锻炼很重要 外功： 2/8原则，能</description>
+    </item>
     
     <item>
       <title>Vim Go</title>
