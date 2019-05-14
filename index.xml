@@ -6,10 +6,19 @@
     <description>Recent content on One Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hant</language>
-    <lastBuildDate>Mon, 13 May 2019 07:00:07 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 14 May 2019 12:39:35 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>音乐</title>
+      <link>/posts/%E9%9F%B3%E4%B9%90/</link>
+      <pubDate>Tue, 14 May 2019 12:39:35 +0800</pubDate>
+      
+      <guid>/posts/%E9%9F%B3%E4%B9%90/</guid>
+      <description>昨天一觉睡醒，今天早上居然脑袋有点清明，这是好久没有的感觉。想来想去，就是昨天在睡觉之前，有听一些钢琴曲，看来这个还是有一些的效果的。 回顾自</description>
+    </item>
     
     <item>
       <title>Golang的几个概念</title>
@@ -323,7 +332,7 @@
       <pubDate>Wed, 24 Apr 2019 08:48:33 +0800</pubDate>
       
       <guid>/%E4%BA%A4%E6%98%93/</guid>
-      <description>首先是判断牛熊： 在操作的当天前面2天，不包括当天的13周期线的值的大小：如果前天的13周期均线值大于昨天，就是熊市，反之就是牛市。这里没有任</description>
+      <description>牛熊： 在操作的当天前面2天，不包括当天的13周期线的值的大小：如果前天的13周期均线值大于昨天，就是熊市，反之就是牛市; 开盘价的观察： 必须观</description>
     </item>
     
     <item>
