@@ -6,10 +6,28 @@
     <description>Recent content in Posts on One Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hant</language>
-    <lastBuildDate>Tue, 14 May 2019 12:39:35 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 May 2019 13:32:41 +0800</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Svelte组件的测试</title>
+      <link>/posts/svelte%E7%BB%84%E4%BB%B6%E7%9A%84%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Sun, 19 May 2019 13:32:41 +0800</pubDate>
+      
+      <guid>/posts/svelte%E7%BB%84%E4%BB%B6%E7%9A%84%E6%B5%8B%E8%AF%95/</guid>
+      <description>svelte组件的测试，利用roll up打包成一个js文件，下面是一个测试的内容。 由于所有的这些都是静态的资源，因此在git page上照样可</description>
+    </item>
+    
+    <item>
+      <title>笔</title>
+      <link>/posts/%E7%AC%94/</link>
+      <pubDate>Fri, 17 May 2019 06:46:19 +0800</pubDate>
+      
+      <guid>/posts/%E7%AC%94/</guid>
+      <description>最为传统的一笔的概念是指1分图上的1笔，因为在一个5分图上的一笔早已经可以惊心动魄了。 如果站在线段的角度，尽管5分的1笔惊心动魄，可能还是没</description>
+    </item>
     
     <item>
       <title>音乐</title>
