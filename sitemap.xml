@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/%E8%BF%99%E4%B8%A4%E5%A4%A9%E8%B5%B0%E5%8A%BF%E7%9A%84%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2019-05-22T17:25:45+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/svelte%E7%BB%84%E4%BB%B6%E7%9A%84%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2019-05-19T13:32:41+08:00</lastmod>
   </url>
@@ -209,13 +214,13 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-05-19T13:32:41+08:00</lastmod>
+    <lastmod>2019-05-22T17:25:45+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2019-05-19T13:32:41+08:00</lastmod>
+    <lastmod>2019-05-22T17:25:45+08:00</lastmod>
     <priority>0</priority>
   </url>
   
